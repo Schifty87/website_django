@@ -18,4 +18,5 @@ class DetailView(generic.DetailView):
 #class that creates form view
 class AlbumCreate(CreateView):
     model = Album
+    #what attributes do you want user to input?
     fields = ['artist','album_title', 'genre', 'album_logo']

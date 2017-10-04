@@ -1,5 +1,5 @@
 body{
-    background: white url("images/paper.jpg");
+    background-image: white url("images/paper.jpg");
 }
 
 .navbar{

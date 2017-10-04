@@ -12,7 +12,10 @@ class Album(models.Model):
     genre = models.CharField(max_length=100)
     album_logo = models.CharField(max_length=1000)
 
+    #for searches
+    #return album page that was just created
     def get_absolute_URL(self):
+        #(view name, primary key) kwargs = key word args
         return reverse('music:detail',kwargs={'pk':self.pk})
 
     #toString analog
